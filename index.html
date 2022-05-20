@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed</title>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+    <!-- CDN Font Awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Js File -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="game">
+        <div class="container">
+            <div class="name"> <i class="fas fa-keyboard"></i> Typing Speed Test Game <i class="fas fa-keyboard"></i></div>
+            <div class="layout">
+                <div class="message">
+                    You Are Playing On
+                    <span class="lvl"></span> Level & You Have
+                    <span class="seconds"></span> Seconds To Type The Word
+                </div>
+                <div class="box">
+                    <div class="start animate">Start Playing</div>
+                    <select class="level-select" name="Level" id="Level">
+                      <option value="Easy" selected>Easy</option>
+                      <option value="Normal" >Normal</option>
+                      <option value="Hard">Hard</option>
+                    </select>
+                </div>
+                <div class="the-word"></div>
+                <input type="text" class="input" />
+                <div class="upcoming-words">Words Will Show Here</div>
+                <div class="control">
+                    <div class="time">Time Left: <span></span> Seconds</div>
+                    <div class="score">
+                        Score:
+                        <span class="got">0</span> From <span class="total"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="finish"></div>
+            <div class="result">
+                <h3>Win Results :</h3>
+                <table>
+                    <thead>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Level</th>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
